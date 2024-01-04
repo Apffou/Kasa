@@ -3,9 +3,7 @@ function Header(){
 
 return (
     <header>
-        <div>
-            <img src='../images/logo-kasa-mobile.png' />
-        </div>
+            <img src='../images/logo-kasa.png' alt='logo Kasa'/>
         <ul className='header-list'>
             <li>Accueil</li>
             <li>À Propos</li>
