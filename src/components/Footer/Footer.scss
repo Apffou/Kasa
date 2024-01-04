@@ -1,0 +1,23 @@
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 66px 0 58px;
+    img{
+        margin-bottom: 10px;
+        @media screen and (min-width:1440px) {
+            margin-bottom: 29px;
+        }
+    }
+    p{
+        margin: auto;
+        max-width: 134px;
+        @media screen and (min-width:1440px) {
+            max-width: 300px;
+        }
+    }
+    @media screen and (min-width:1440px) {
+        padding: 66px 0 29px;
+    }
+    
+}
