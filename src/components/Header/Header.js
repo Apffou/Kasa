@@ -1,10 +1,10 @@
 import './Header.scss';
-import Logo2 from '../../componentsBase/Logo2/Logo2';
+import ImageLogo from '../../componentsBase/ImageLogo/ImageLogo';
 function Header(){
 
 return (
     <header>
-      <Logo2 logo="../images/logo-kasa.png" alt="logo kasa"></Logo2>
+      <ImageLogo logo="../images/logo-kasa.png" alt="logo kasa"></ImageLogo>
         <ul className='header-list'>
             <li><a href='#'>Accueil</a></li>
             <li><a href='#'>À Propos</a></li>

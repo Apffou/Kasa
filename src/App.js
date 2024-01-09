@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import Background from './components/Background/Background';
 import Tag from './components/Tag/Tag';
 import Dropdown from './components/Dropdown/Dropdown';
+import Thumb from './components/Thumb/Thumb';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Tag nom="Paris10"></Tag>
       <Dropdown title="Description"></Dropdown>
       <Dropdown title="Équipements"></Dropdown>
+      <Thumb></Thumb>
       <Footer/>
     </>
   );
