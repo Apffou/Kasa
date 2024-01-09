@@ -1,10 +1,10 @@
 import './Dropdown.scss';
-function Dropdown(){
+function Dropdown(params){
 
 return (
         <div className='dropdown-content'>
                 <div className='dropdown'>
-                        <span>Description</span>
+                        <span>{params.title}</span>
                         <i className="fa-solid fa-angle-up"></i>
                 </div>
 

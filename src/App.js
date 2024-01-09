@@ -14,7 +14,8 @@ function App() {
       <Tag nom="Cozy"></Tag>
       <Tag nom="Canal"></Tag>
       <Tag nom="Paris10"></Tag>
-      <Dropdown></Dropdown>
+      <Dropdown title="Description"></Dropdown>
+      <Dropdown title="Équipements"></Dropdown>
       <Footer/>
     </>
   );
