@@ -1,9 +1,10 @@
 import './Background.scss';
-function Background(){
+function Background(path){
 
 return (
+      
         <div className='background'>
-                <img src='../images/paysage-cotier.png' alt='Paysage au bord de mer avec des falaises'/>
+                <img src={path.paysage} alt='Paysage au bord de mer avec des falaises'/>
                 <h1>Chez vous, partout et ailleurs</h1>
         </div>
 )

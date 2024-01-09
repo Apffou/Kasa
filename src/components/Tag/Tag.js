@@ -1,11 +1,9 @@
 import './Tag.scss';
-function Tag(){
-
+function Tag(params){
 return (
-        <div>
-
+        <div className='tag'> 
+        {params.nom}
         </div>
-
 )
 
 }

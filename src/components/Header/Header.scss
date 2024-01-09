@@ -21,13 +21,17 @@ header{
         justify-content: flex-end;
         gap: 26px;
         list-style: none;
-        color: #FF6060;
+
         text-transform: uppercase;
         font-size: 12px;
         @media screen and (min-width:1440px) {
             gap: 57px;
             text-transform: none;
             font-size: 24px;
+        }
+        a{
+            text-decoration: none;
+            color: #FF6060;
         }
     }
 
