@@ -5,4 +5,24 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.cartes{
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width:1024px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 20px 100px 20px 100px;
+        border-radius: 25px;
+        background-color: #F6F6F6;
+        padding: 56px 50px 43px 50px;
+        gap: 60px;
+    }
 }

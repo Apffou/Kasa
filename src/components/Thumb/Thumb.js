@@ -1,11 +1,11 @@
 import './Thumb.scss';
-function Thumb(){
+function Thumb(props){
 
 return (
         <div className='thumb'>
-                <h2 className=''></h2>
+                <img src={props.logement.cover} alt={props.logement.title} />
+                <h2>{props.logement.title}</h2>
         </div>
-
 )
 
 }
