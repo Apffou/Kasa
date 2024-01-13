@@ -1,13 +1,13 @@
 import './Background.scss';
-function Background(path){
+function Background(params) {
+        const urlImg = "../../images/" + params.fileName;
+        return (
 
-return (
-      
-        <div className='background'>
-                <img src={path.paysage} />
-                <h1>Chez vous, partout et ailleurs</h1>
-        </div>
-)
+                <div className='background'>
+                        <img src={urlImg} />
+                        <h1> {params.h1}</h1>
+                </div>
+        )
 
 }
 
