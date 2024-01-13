@@ -9,6 +9,7 @@ import Thumb from './components/Thumb/Thumb';
 
 import Home from './Pages/Home';
 import About from './Pages/About';
+import Error404 from './Pages/Error404';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home nom="Home" />} />
         <Route path="/about" element={<About />} />
+        <Route path="/error404" element={<Error404 />} />
       </Routes>
       <Footer />
     </>
