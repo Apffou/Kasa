@@ -29,10 +29,17 @@
 
         @media screen and (min-width:1440px) {
             max-width: 100%;
+            font-size: 36px;
         }
     }
 
     a {
         color: #FF6060;
+        font-size: 14px;
+        font-weight: 500;
+
+        @media screen and (min-width:1440px) {
+            font-size: 18px;
+        }
     }
 }
