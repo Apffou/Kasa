@@ -1,10 +1,10 @@
 import './Tag.scss';
-function Tag(params){
-return (
-        <div className='tag'> 
-        {params.nom}
-        </div>
-)
+function Tag(props) {
+        return (
+                <div className='tag'>
+                        {props.logement.tags}
+                </div>
+        )
 
 }
 

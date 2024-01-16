@@ -8,9 +8,6 @@ import Dropdown from '../components/Dropdown/Dropdown';
 
 function Home() {
     return (
-        //<>
-        // <Route path="/About" element={<Tag nom="about" />} /> 
-        //</>
 
         <div>
             <Background fileName="paysage-cotier.png" alt='Paysage au bord de mer avec des falaises' h1="Chez vous, partout et ailleurs"></Background>
