@@ -1,0 +1,38 @@
+.error-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF6060;
+    margin: 113px 0 113px 0;
+    gap: 113px;
+
+    @media screen and (min-width:1440px) {
+        gap: 139px;
+    }
+
+
+    img {
+        width: 198px;
+        height: auto;
+
+        @media screen and (min-width:1440px) {
+            width: 597px;
+        }
+    }
+
+    h1 {
+        max-width: 60%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+
+        @media screen and (min-width:1440px) {
+            max-width: 100%;
+        }
+    }
+
+    a {
+        color: #FF6060;
+    }
+}
