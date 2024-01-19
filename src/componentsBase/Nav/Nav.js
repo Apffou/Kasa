@@ -1,12 +1,13 @@
 import './Nav.scss';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 function Nav() {
 
     return (
         <nav>
             <ul className='header-list'>
-                <li> <Link to="/" className={(nav) => (nav.isActive ? "nav-active" : "")} >  Accueil</Link></li>
-                <li> <Link to="/about" className={(nav) => (nav.isActive ? "nav-active" : "")}> À Propos</Link> </li>
+                <li> <NavLink to="/" >  Accueil</NavLink></li>
+                <li> <NavLink to="/about"> À Propos</NavLink> </li>
             </ul>
         </nav>
     )

@@ -2,7 +2,7 @@ import './Tag.scss';
 function Tag(props) {
         return (
                 <div className='tag'>
-                        {props.logement.tags}
+                        {props.nom}
                 </div>
         )
 

@@ -1,5 +1,5 @@
 .dropdown-content {
-    margin: 20px 15px 20px 20px;
+    margin: 20px 0 20px 0;
 
     @media screen and (min-width:1440px) {
         margin: 38px 200px 38px 200px;
@@ -20,5 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-
+    i {
+        font-size: large;
+    }
 }

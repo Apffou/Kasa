@@ -8,6 +8,8 @@ body {
     font-weight: 500;
 }
 
+/* STYLE DE HOME */
+
 .cartes {
     height: auto;
     margin: 20px;
@@ -24,5 +26,31 @@ body {
         background-color: #F6F6F6;
         padding: 56px 50px 43px 50px;
         gap: 60px;
+    }
+}
+
+/* STYLE DE ABOUT */
+
+.about-content {
+    margin: 0 20px 0 20px;
+}
+
+/* STYLE DE PAGE */
+
+.content-page {
+    margin: 27px 20px 27px 20px;
+
+    h1 {
+        color: #FF6060;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+
+    .content-tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
