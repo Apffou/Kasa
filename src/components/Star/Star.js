@@ -1,16 +1,12 @@
 import './Star.scss';
-function Star() {
+function Star(params) {
 
+    let classStar = "fa-solid fa-star fa-sm" + (params.rating ? " star-active" : '');
     return (
-        <div className='star-content'>
-            <i className="fa-solid fa-star star-default fa-sm"></i>
-            <i className="fa-solid fa-star star-default fa-sm"></i>
-            <i className="fa-solid fa-star star-default fa-sm"></i>
-            <i className="fa-solid fa-star star-default fa-sm"></i>
-            <i className="fa-solid fa-star star-default fa-sm"></i>
-        </div>
+        <>
+            <i className={classStar} > </i >
+        </>
     )
-
 }
 
 export default Star;

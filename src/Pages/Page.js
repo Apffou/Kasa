@@ -10,8 +10,15 @@ function Page() {
 
     const params = useParams();
     const logement = data.find((element) => element.id === params.idlogement);
-    console.log(logement)
-    console.log(logement.tags)
+    const stars = [];
+    for (let i = 1; i <= 5; i = i + 1) {
+        if (i <= logement.rating) {
+            stars.push(<Star rating />);
+        } else {
+            stars.push(<Star />);
+        }
+    }
+
     return (
 
         <section className="content-page">
@@ -25,8 +32,8 @@ function Page() {
                     <p>{logement.host.name} </p>
                     <img src={logement.host.picture} />
                 </div>
-                <div>
-                    <Star />
+                <div className='stars'>
+                    {stars}
                 </div>
             </div>
             <section className='dropdown-content'>
