@@ -42,8 +42,8 @@ function Page() {
                 </div>
             </div>
             <section className='dropdown-content'>
-                <Dropdown title="Description" />
-                <Dropdown title='Équipement' />
+                <Dropdown title="Description" text={logement.description} />
+                <Dropdown title='Équipement' text={logement.equipments} />
             </section>
         </section>
 
