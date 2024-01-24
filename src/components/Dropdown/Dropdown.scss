@@ -44,8 +44,8 @@
     &.open {
         grid-template-rows: 55px 1fr;
 
-        svg {
-            rotate: 180deg;
+        i {
+            rotate: -180deg;
         }
 
         .dropdownSection__content {
@@ -53,7 +53,7 @@
         }
     }
 
-    svg {
+    i {
         rotate: 0deg;
         transform-origin: center;
         transition: 0.5s all;
