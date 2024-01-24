@@ -3,14 +3,33 @@
     height: 13px;
     color: #FFF;
     border-radius: 5px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     font-size: 13px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (min-width:1024px) {
+        font-size: 18px;
+        padding: 20px;
+        height: 18px;
+
+    }
+
+    @media screen and (min-width:1441px) and (max-width: 2560px) {
+        font-size: 25px;
+        height: 25px;
+    }
 
     i {
         font-size: large;
+
+        @media screen and (min-width:1024px) {
+            font-size: xx-large;
+
+        }
     }
 
 }

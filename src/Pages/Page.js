@@ -22,18 +22,23 @@ function Page() {
     return (
 
         <section className="content-page">
-            <div className='location-tags-content'>
-                <h1>{logement.title}</h1>
-                <p>{logement.location}</p>
-                <div className='content-tags'> {logement.tags.map((tag) => <Tag nom={tag} />)} </div>
+            <div className='carousel'>
+
             </div>
-            <div className='ratings-host'>
-                <div className='host-content'>
-                    <p>{logement.host.name} </p>
-                    <img src={logement.host.picture} />
+            <div className='location-ratings-content'>
+                <div className='location-tags-content'>
+                    <h1>{logement.title}</h1>
+                    <p>{logement.location}</p>
+                    <div className='content-tags'> {logement.tags.map((tag) => <Tag nom={tag} />)} </div>
                 </div>
-                <div className='stars'>
-                    {stars}
+                <div className='ratings-host'>
+                    <div className='host-content'>
+                        <p>{logement.host.name} </p>
+                        <img src={logement.host.picture} />
+                    </div>
+                    <div className='stars'>
+                        {stars}
+                    </div>
                 </div>
             </div>
             <section className='dropdown-content'>

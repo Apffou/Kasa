@@ -1,4 +1,6 @@
+import React, { useState } from 'react';
 import './Dropdown.scss';
+
 function Dropdown(params) {
 
         return (
