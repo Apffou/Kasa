@@ -1,5 +1,4 @@
 import '../App.scss';
-
 import data from '../logements.json';
 import Tag from "../components/Tag/Tag";
 import Dropdown from '../components/Dropdown/Dropdown';
@@ -7,11 +6,10 @@ import Star from '../components/Star/Star';
 import Error404 from './Error404';
 import { useParams } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
+import Carousel from '../components/Carousel/Carousel';
 
 
 function Page() {
-
-
 
     const params = useParams();
     const logement = data.find((element) => element.id === params.idlogement);
@@ -33,18 +31,13 @@ function Page() {
             stars.push(<Star />);
         }
     }
-    // Alt pour les photos des Hosts
+    // Const pour ajouter plus de précision dans le Alt pour les photos des Hosts
     const altPhoto = "Photo du propriètaire " + (logement.host.name);
-
-
-
 
     return (
 
         <section className="content-page">
-            <div className='carousel'>
-
-            </div>
+            <Carousel />
             <div className='location-ratings-content'>
                 <div className='location-tags-content'>
                     <h1>{logement.title}</h1>
@@ -63,10 +56,13 @@ function Page() {
             </div>
             <section className='dropdown-content'>
                 <Dropdown title="Description" text={logement.description} />
-                <Dropdown title='Équipement' text={logement.equipments} />
+                <Dropdown title='Équipement' list={logement.equipments} />
+
             </section>
         </section>
 
     );
 }
 export default Page;
+
+//                <Dropdown title='Équipement' list={logement.equipments.map((listing) => <List li={listing} />)} />

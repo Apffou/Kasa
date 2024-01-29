@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Dropdown.scss';
 
-function Dropdown({ title, text }) {
+
+function Dropdown({ title, text, list }) {
         const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
         const [classActive, setClassActive] = useState("");
 
@@ -14,6 +15,18 @@ function Dropdown({ title, text }) {
                 setIsEquipmentsOpen(!isEquipmentsOpen);
         };
 
+
+        let content = "";
+
+        if (text) {
+                content = text;
+        }
+        else if (list) {
+                content = list.map((item, index) => (
+                        <li key={index}>{item}</li>
+                ));
+        }
+
         return (
                 <div className={`dropdownSection ${classActive}`}>
                         <button className="dropdownSection__button">
@@ -25,13 +38,9 @@ function Dropdown({ title, text }) {
                         </button>
 
                         <div className="dropdownSection__content">
-                                <ul>
-                                        {Array.isArray(text) ? (
-                                                text.map((textList) => <li key={Math.random()}>{textList}</li>)
-                                        ) : (
-                                                <p>{text}</p>
-                                        )}
-                                </ul>
+                                <p>
+                                        {content}
+                                </p>
                         </div>
                 </div>
         );

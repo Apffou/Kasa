@@ -1,6 +1,26 @@
 .thumb {
     border-radius: 10px;
     position: relative;
+    height: 255px;
+
+    @media screen and (min-width:1024px) {
+        height: 340px;
+    }
+
+    @media (min-width:2000px) and (max-width: 2560px) {
+        height: 500px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+        border-radius: 10px;
+    }
 
     img {
         width: 100%;

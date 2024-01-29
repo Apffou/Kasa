@@ -3,7 +3,7 @@ import './Carousel.scss';
 function Carousel() {
 
     return (
-        <div>
+        <div className='carousel'>
 
         </div>
 
