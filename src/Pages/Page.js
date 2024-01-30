@@ -56,7 +56,7 @@ function Page() {
             </div>
             <section className='dropdown-content'>
                 <Dropdown title="Description" text={logement.description} />
-                <Dropdown title='Équipement' list={logement.equipments} />
+                <Dropdown title='Équipement' text={logement.equipments} />
 
             </section>
         </section>

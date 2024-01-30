@@ -18,14 +18,23 @@ function Dropdown({ title, text, list }) {
 
         let content = "";
 
-        if (text) {
-                content = text;
+        switch (typeof text) {
+                // Dans le cas d'un objet on affiche la liste
+                case 'object':
+                        content = (
+                                <ul>
+                                        {text.map((item, index) => (
+                                                <li key={index}>{item}</li>
+                                        ))}
+                                </ul>
+                        );
+                        break;
+                // Par défault on affichera les textes
+                default:
+                        content = (<p>{text}</p>);
+                        break
         }
-        else if (list) {
-                content = list.map((item, index) => (
-                        <li key={index}>{item}</li>
-                ));
-        }
+
 
         return (
                 <div className={`dropdownSection ${classActive}`}>
@@ -38,25 +47,11 @@ function Dropdown({ title, text, list }) {
                         </button>
 
                         <div className="dropdownSection__content">
-                                <p>
-                                        {content}
-                                </p>
+                                {content}
                         </div>
                 </div>
         );
 }
 
-
-/*function Dropdown(params) {
-
-        return (
-                <div className='dropdown'>
-                        <span>{params.title}</span>
-                        <i className="fa-solid fa-angle-up"></i>
-                </div>
-
-        )
-
-        }*/
 
 export default Dropdown;

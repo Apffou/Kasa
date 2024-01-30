@@ -82,7 +82,7 @@
     .dropdownSection__content {
         position: relative;
         z-index: -1;
-        padding: 0;
+
         margin-top: -8px;
         line-height: 1.5;
         background-color: #f6f6f6;
@@ -92,6 +92,10 @@
         width: 100%;
         overflow: hidden;
         transition: all 0.5s;
+
+        p {
+            margin: 25px;
+        }
     }
 }
 
