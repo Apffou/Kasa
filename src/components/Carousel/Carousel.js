@@ -4,22 +4,25 @@ import './Carousel.scss';
 import { useState } from 'react';
 
 function Carousel({ images }) {
-    // Utilisation de useState pour gérer l'index de l'image actuellement affichée
+    //-------------------------------- Utilisation de useState pour gérer l'index de l'image actuellement affichée
     const [currentImageIndex, setCurrentImageIndex] = useState(0); //index, fonction à appeler pour modifier
     const totalImages = images.length;
-    //--------------------------------
+
+    //-------------------------------- Fonction pour le bouton précèdent 
     const previousImage = () => {
         setCurrentImageIndex((prevIndex) =>
             prevIndex === 0 ? totalImages - 1 : prevIndex - 1
         );
     };
 
+    //-------------------------------- Fonction pour le bouton suivant
     const nextImage = () => {
         setCurrentImageIndex((prevIndex) =>
             prevIndex === totalImages - 1 ? 0 : prevIndex + 1
         );
     };
 
+    //-------------------------------- Si nombre total des images est de 1 alors on n'affiche que l'image sans pagination / flèches
     if (totalImages === 1) {
         return (
             <div className="pictures-carrousel">
