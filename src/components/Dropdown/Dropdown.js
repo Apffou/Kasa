@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Dropdown.scss';
 
 
-function Dropdown({ title, text, list }) {
+function Dropdown({ title, text }) {
         const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
         const [classActive, setClassActive] = useState("");
 
@@ -14,7 +14,6 @@ function Dropdown({ title, text, list }) {
                 }
                 setIsEquipmentsOpen(!isEquipmentsOpen);
         };
-
 
         let content = "";
 

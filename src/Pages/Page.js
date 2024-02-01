@@ -37,7 +37,7 @@ function Page() {
     return (
 
         <section className="content-page">
-            <Carousel />
+            < Carousel images={logement.pictures} />
             <div className='location-ratings-content'>
                 <div className='location-tags-content'>
                     <h1>{logement.title}</h1>

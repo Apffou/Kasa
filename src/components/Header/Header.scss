@@ -9,6 +9,10 @@ header {
         margin: 45px 100px 0 100px;
     }
 
+    @media screen and (min-width:1920px) {
+        margin: 45px 180px 0 180px;
+    }
+
     img {
         width: 145px;
         height: auto;
