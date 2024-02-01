@@ -14,14 +14,12 @@ body {
 .cartes {
     height: auto;
     margin: 20px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
 
     @media screen and (min-width:1024px) {
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
         margin: 20px 90px 20px 90px;
         border-radius: 25px;
         background-color: #F6F6F6;
@@ -30,14 +28,17 @@ body {
     }
 
     @media screen and (min-width:1440px) and (max-width:1920px) {
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr 1fr;
         margin: 20px 100px 20px 100px;
-        border-radius: 25px;
-        background-color: #F6F6F6;
         padding: 56px 50px 43px 50px;
         gap: 60px;
+    }
+
+    @media screen and (min-width:1920px) and (max-width:2630px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 20px 100px 20px 100px;
+        border-radius: 30px;
+        padding: 56px 50px 43px 50px;
     }
 }
 
@@ -53,6 +54,15 @@ body {
         margin: 0 120px 20px 120px;
         gap: 30px;
     }
+
+    @media screen and (min-width:1440px) and (max-width:1920px) {
+        margin: 0 208px 20px 208px;
+    }
+
+    @media screen and (min-width:1920px) and (max-width:2560px) {
+        margin: 0 300px 20px 300px;
+        gap: 30px;
+    }
 }
 
 /*****  STYLE DE PAGE PAGE */
@@ -65,7 +75,7 @@ body {
     }
 
     @media screen and (min-width:1920px) {
-        margin: 50px 180px 0 180px;
+        margin: 50px 180px 100px 180px;
     }
 
 

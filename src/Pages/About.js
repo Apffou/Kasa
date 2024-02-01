@@ -1,7 +1,6 @@
 import '../App.scss';
 import Dropdown from '../components/Dropdown/Dropdown';
 import Background from "../components/Background/Background";
-//import data from './logements.json';
 
 function About() {
     return (

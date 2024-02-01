@@ -4,8 +4,9 @@ function Background(params) {
         return (
 
                 <div className='background'>
-                        <img src={urlImg} />
                         <h1> {params.h1}</h1>
+                        <img src={urlImg} />
+
                 </div>
         )
 

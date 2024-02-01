@@ -31,7 +31,7 @@ function Carousel({ images }) {
     return (
         <div className='carousel'>
             <img src={images[currentImageIndex]} alt={images.title} />
-            <div className='inPage'>{currentImageIndex + 1}/ {totalImages}</div>
+            <div className='inPage'>{currentImageIndex + 1}/{totalImages}</div>
             <div className='arrows'>
                 <img src={leftArrow} alt='précédent' onClick={previousImage} />
                 <img src={rightArrow} alt='suivant' onClick={nextImage} />

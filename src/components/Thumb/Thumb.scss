@@ -29,12 +29,10 @@
         border-radius: 10px;
 
         @media screen and (min-width:1024px) {
-            width: 340px;
             height: 340px;
         }
 
         @media (min-width:2000px) and (max-width: 2560px) {
-            width: 500px;
             height: 500px;
         }
     }
