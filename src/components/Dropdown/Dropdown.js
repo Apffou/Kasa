@@ -7,18 +7,19 @@ function Dropdown({ title, text }) {
         const [isEquipmentsOpen, setIsEquipmentsOpen] = useState(false);
 
         const [classActive, setClassActive] = useState("");
-        //-------------------------------- Dans le cas d'un objet on affiche la liste du tableau
+        //-------------------------------- Constante pour ajouter 
         const toggleEquipments = () => {
-                if (!isEquipmentsOpen) {
-                        setClassActive("open");
-                } else {
+                //-------------------------------- par défaut le dropdown est open
+                setClassActive("open");
+                if (isEquipmentsOpen) {
                         setClassActive("");
                 }
+                //--------------------------------Inversement du boolean de l'ouverture du dropdown
                 setIsEquipmentsOpen(!isEquipmentsOpen);
         };
 
         let content = "";
-
+        //
         switch (typeof text) {
                 //-------------------------------- Dans le cas d'un objet on affiche la liste du tableau
                 case 'object':
@@ -50,6 +51,4 @@ function Dropdown({ title, text }) {
                 </div>
         );
 }
-
-
 export default Dropdown;

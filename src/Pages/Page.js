@@ -31,8 +31,6 @@ function Page() {
             stars.push(<Star />);
         }
     }
-    // Const pour ajouter plus de précision dans le Alt pour les photos des Hosts
-    const altPhoto = "Photo du propriètaire " + (logement.host.name);
 
     return (
 
@@ -47,7 +45,7 @@ function Page() {
                 <div className='ratings-host'>
                     <div className='host-content'>
                         <p>{logement.host.name} </p>
-                        <img src={logement.host.picture} alt={altPhoto} />
+                        <img src={logement.host.picture} alt={`Photo du propriètaire ${logement.host.name}`} />
                     </div>
                     <div className='stars'>
                         {stars}
@@ -64,5 +62,3 @@ function Page() {
     );
 }
 export default Page;
-
-//                <Dropdown title='Équipement' list={logement.equipments.map((listing) => <List li={listing} />)} />

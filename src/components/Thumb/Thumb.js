@@ -10,7 +10,5 @@ function Thumb(props) {
                         </div>
                 </Link >
         )
-
 }
-
 export default Thumb;

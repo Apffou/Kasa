@@ -1,5 +1,6 @@
 import './Background.scss';
 function Background(params) {
+        // constante pour concatener le chemin ()évite de le retaper + création paramètre 
         const urlImg = "../../images/" + params.fileName;
         return (
 
@@ -11,5 +12,4 @@ function Background(params) {
         )
 
 }
-
 export default Background;

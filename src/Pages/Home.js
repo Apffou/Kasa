@@ -1,7 +1,6 @@
 import Background from '../components/Background/Background';
 import Thumb from '../components/Thumb/Thumb';
 import data from '../logements.json';
-//import data from '../logements.json';
 
 function Home() {
     return (
