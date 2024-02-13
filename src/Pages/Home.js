@@ -8,7 +8,7 @@ function Home() {
         <div>
             <Background fileName="paysage-cotier.png" alt='Paysage au bord de mer avec des falaises' h1="Chez vous, partout et ailleurs"></Background>
             <section className='cartes'>
-                {data.map((logement) => <Thumb key={logement.key} logement={logement} />)}
+                {data.map((logement) => <Thumb key={logement.id} logement={logement} />)}
             </section>
         </div>
     );

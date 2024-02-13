@@ -37,7 +37,7 @@ function Page() {
                 <div className='location-tags-content'>
                     <h1>{logement.title}</h1>
                     <p>{logement.location}</p>
-                    <div className='content-tags'> {logement.tags.map((tag) => <Tag nom={tag} />)} </div>
+                    <div className='content-tags'> {logement.tags.map((tag) => <Tag key={tag} nom={tag} />)} </div>
                 </div>
                 <div className='ratings-host'>
                     <div className='host-content'>
