@@ -5,7 +5,6 @@ import Dropdown from '../components/Dropdown/Dropdown';
 import Star from '../components/Star/Star';
 import Error404 from './Error404';
 import { useParams } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
 import Carousel from '../components/Carousel/Carousel';
 
 
@@ -17,12 +16,10 @@ function Page() {
     // Si le lien n'est pas le bon alors on affiche la page 404
     if (logement === undefined)
         return (
-            <Routes>
-                <Route path='/*' element={<Error404 />} />
-            </Routes>
+            <Error404 />
         );
 
-    // Boucle pour afficher les étoiles de notation 
+    // Boucle pour définir 5 étoiles, afficher les étoiles de notation 
     const stars = [];
     for (let i = 1; i <= 5; i = i + 1) {
         if (i <= logement.rating) {
