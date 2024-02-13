@@ -23,9 +23,9 @@ function Page() {
     const stars = [];
     for (let i = 1; i <= 5; i = i + 1) {
         if (i <= logement.rating) {
-            stars.push(<Star rating />);
+            stars.push(<Star key={i} rating />);
         } else {
-            stars.push(<Star />);
+            stars.push(<Star key={i} />);
         }
     }
 
