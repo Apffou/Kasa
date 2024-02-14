@@ -14,8 +14,12 @@ header {
     }
 
     img {
-        width: 145px;
+        width: 100px;
         height: auto;
+
+        @media screen and (min-width:375px) {
+            width: 145px;
+        }
 
         @media screen and (min-width:1440px) {
             width: 211px;
@@ -27,11 +31,15 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        gap: 26px;
+        gap: 18px;
         list-style: none;
 
         text-transform: uppercase;
         font-size: 12px;
+
+        @media screen and (min-width:375px) {
+            gap: 26px;
+        }
 
         @media screen and (min-width:1440px) {
             gap: 57px;
