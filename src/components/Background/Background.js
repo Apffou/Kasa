@@ -6,7 +6,7 @@ function Background(params) {
 
                 <div className='background'>
                         <h1> {params.h1}</h1>
-                        <img src={urlImg} />
+                        <img src={urlImg} alt={""} />
 
                 </div>
         )

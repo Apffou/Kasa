@@ -42,7 +42,7 @@ function Page() {
                 <div className='ratings-host'>
                     <div className='host-content'>
                         <p>{logement.host.name} </p>
-                        <img src={logement.host.picture} alt={`Photo du propriètaire ${logement.host.name}`} />
+                        <img src={logement.host.picture} alt={`Portrait du propriètaire ${logement.host.name}`} />
                     </div>
                     <div className='stars'>
                         {stars}

@@ -1,9 +1,9 @@
 import './ImageLogo.scss';
-function ImageLogo(path){
+function ImageLogo(path) {
 
-return (
-    <img src={path.logo}/>
-)
+    return (
+        <img src={path.logo} alt={""} />
+    )
 
 }
 
